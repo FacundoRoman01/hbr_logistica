@@ -140,7 +140,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden flex items-center">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-28 pb-12">
       <div className="absolute inset-0 z-0">
         <video 
           autoPlay 
@@ -153,54 +153,51 @@ const Hero = () => {
           <source src="/assets/intro-hbr2.mp4" type="video/mp4" />
           <source src="https://assets.mixkit.co/videos/preview/mixkit-cargo-ship-sailing-in-the-ocean-41002-large.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-[#100075]/9 backdrop-brightness-75"></div>
+        <div className="absolute inset-0 bg-[#100075]/60 md:bg-[#100075]/[9%] backdrop-brightness-75"></div>
       </div>
 
-   <div className="md:hidden max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="max-w-2xl">
+   <div className="md:hidden w-full flex justify-center relative z-10">
+        <div className="w-[92%] max-w-md text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-[#100075]/20 backdrop-blur-md border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl inline-block"
+            className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-[40px] shadow-2xl"
           >
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-accent/10 border border-lime-accent/20 text-lime-accent text-xs font-bold uppercase tracking-[0.2em] mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lime-accent/10 border border-lime-accent/20 text-lime-accent text-[10px] font-bold uppercase tracking-widest mb-6"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-accent"></span>
               </span>
-              Logística Internacional 
+              Logística Internacional
             </motion.span>
 
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-[0.95] tracking-tighter mb-6">
+            <h1 className="text-5xl font-bold text-white leading-[1.1] tracking-tighter mb-6">
               Tu carga en <br />
               <span className="text-lime-accent">buenas manos.</span>
             </h1>
 
-            <p className="text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+            <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-[300px] mx-auto">
               Simplificamos tus importaciones desde EE.UU a Argentina con la mayor rapidez y transparencia del mercado.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="bg-lime-accent text-[#100075] px-8 py-4 rounded-2xl font-black text-lg hover:bg-white hover:scale-105 transition-all shadow-xl shadow-lime-accent/20 flex items-center justify-center gap-3 group">
+            <div className="flex flex-col gap-4">
+              <a href="#contact" className="w-full bg-lime-accent text-[#100075] py-4 rounded-2xl font-bold hover:bg-white hover:scale-105 transition-all shadow-xl shadow-lime-accent/20 flex items-center justify-center gap-3 group">
                 INICIAR ENVÍO
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#pricing" className="bg-white/5 backdrop-blur-sm border border-white/10 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center">
+              <a href="#pricing" className="w-full border border-white/30 text-white py-4 rounded-2xl font-bold hover:bg-white/10 transition-all flex items-center justify-center">
                 Ver Tarifas
               </a>
             </div>
           </motion.div>
         </div>
       </div>
-
-
-  
     </section>
   );
 };
@@ -821,7 +818,7 @@ const WhatsAppButton = () => {
       href="https://wa.me/5491134991652"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 bg-[#25D366] w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 hover:shadow-green-400/50 transition-all duration-300 ease-in-out"
+      className="fixed bottom-6 right-6 bg-[#25D366] w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 hover:shadow-green-400/50 transition-all duration-300 ease-in-out"
       aria-label="Contactar por WhatsApp"
     >
       <svg

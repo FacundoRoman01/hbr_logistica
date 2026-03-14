@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+HBR Logística | Rediseño Web 2026 ✈️📦
+Rediseño integral de la plataforma web para HBR Logística SRL. El proyecto transforma la presencia digital de la empresa hacia una estética "Logística Tech", enfocada en la conversión, la confianza del usuario y la optimización de procesos de importación.
 
-# Run and deploy your AI Studio app
+🚀 Tecnologías
+React 18 + Vite (Frontend ágil).
 
-This contains everything you need to run your app locally.
+TypeScript (Seguridad en el código).
 
-View your app in AI Studio: https://ai.studio/apps/b6844787-17e8-46a8-9c1e-cedfc8577482
+Tailwind CSS (Diseño moderno y responsive).
 
-## Run Locally
+Framer Motion (Animaciones y Glassmorphism).
 
-**Prerequisites:**  Node.js
+Google AI Studio (Gemini 1.5 Pro) (Consultoría de diseño y optimización de contenido).
 
+✨ Características Principales
+Hero de Alto Impacto: Integración de video en loop con overlays de marca para una experiencia inmersiva.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Glassmorphism UI: Interfaz moderna con efectos de desenfoque y transparencias para mobile y desktop.
+
+Mobile First: Diseño optimizado específicamente para dispositivos de alta gama (ej. Samsung S20 FE / iPhone).
+
+Copywriting Profesional: Textos comerciales reescritos para transmitir autoridad legal (R.N.P.S.P N° 983) y profesionalismo.
