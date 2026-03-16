@@ -804,7 +804,14 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             <span className="text-slate-300 text-xs">Powered by</span>
-            <span className="text-[#100075] font-bold text-sm tracking-widest">GOestudi<span className="text-lime-accent">.</span></span>
+            <a 
+              href="https://goestudi-agencia.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#100075] font-bold text-sm tracking-widest hover:opacity-80 transition-opacity"
+            >
+              GOestudi<span className="text-lime-accent">.</span>
+            </a>
           </div>
         </div>
       </div>
